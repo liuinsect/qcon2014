@@ -1,4 +1,4 @@
-package demo1;
+package demo1_concurrentHashMap;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.BiConsumer;
@@ -23,7 +23,7 @@ public class Main {
         map.put("2",2);
         map.put("3",3);
 
-
+//        map.sea
 //        map.forEach(new BiConsumer() {
 //            @Override
 //            public void accept(Object o, Object o2) {
@@ -81,21 +81,22 @@ public class Main {
 
 
 
-        Object result = map.reduceKeys(1,new BiFunction<String, String, String>() {
-            @Override
-            public String apply(String s, String s2) {
-                System.out.println(s);
-                System.out.println(s2);
-                return "4";  //To change body of implemented methods use File | Settings | File Templates.
-            }
-
-            @Override
-            public <V> BiFunction<String, String, V> andThen(Function<? super String, ? extends V> after) {
-                return null;  //To change body of implemented methods use File | Settings | File Templates.
-            }
-        });
-
-        System.out.println(result);
+//        Object result = map.reduceKeys(1,new BiFunction<String, String, String>() {
+//            @Override
+//            public String apply(String s, String s2) {
+//                System.out.println(s);
+//                System.out.println(s2);
+//                return s;  //To change body of implemented methods use File | Settings | File Templates.
+//            }
+//
+//            @Override
+//            public <V> BiFunction<String, String, V> andThen(Function<? super String, ? extends V> after) {
+//                System.out.println("asdfasdfasdf");
+//                return null;  //To change body of implemented methods use File | Settings | File Templates.
+//            }
+//        });
+//
+//        System.out.println(result);
 
     }
 
