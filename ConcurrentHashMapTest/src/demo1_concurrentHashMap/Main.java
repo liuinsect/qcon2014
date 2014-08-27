@@ -22,7 +22,7 @@ public class Main {
         map.put("1",1);
         map.put("2",2);
         map.put("3",3);
-
+        System.out.println(ConcurrentHashMap.newKeySet());
 //        map.sea
 //        map.forEach(new BiConsumer() {
 //            @Override
